@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:id="@+id/verbBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/button_look"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/button_look_content_description"
+                android:src="@drawable/custom_ic_eye_on" >
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/button_examine"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/button_examine_content_description"
+                android:src="@drawable/custom_ic_search" />
+
+            <ImageButton
+                android:id="@+id/button_get"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/button_get_content_description"
+                android:src="@drawable/custom_ic_upload" >
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/button_drop"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/button_get_content_description"
+                android:src="@drawable/custom_ic_download" >
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/button_open"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/button_open_content_description"
+                android:src="@drawable/custom_ic_unlock" >
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/button_close"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/button_close_content_description"
+                android:src="@drawable/custom_ic_lock" >
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/button_inv"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/button_inventory_content_description"
+                android:src="@drawable/custom_ic_paste" >
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/button_press"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/button_press_content_description"
+                android:src="@drawable/custom_ic_off" >
+            </ImageButton>
+            
+            <ImageButton
+                android:id="@+id/button_read"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/button_read_content_description"
+                android:src="@drawable/custom_ic_copy" >
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/button_wait"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/button_wait_content_description"
+                android:src="@drawable/custom_ic_time_usage" >
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/button_clear"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/button_clear_input_content_description"
+                android:src="@drawable/custom_ic_remove" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/textInputBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/button_expandCollapseVerbBar"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/button_expand_collapse_content_description"
+            android:src="@drawable/custom_ic_expand" />
+
+        <EditText
+            android:id="@+id/gameTextInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|fill_horizontal"
+            android:layout_weight="1"
+            android:hint="@string/what_now"
+            android:inputType="text|textNoSuggestions" />
+
+        <ImageButton
+            android:id="@+id/button_enter"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/button_enter_content_description"
+            android:src="@drawable/custom_ic_signout" />
+    </LinearLayout>
+
+</LinearLayout>
