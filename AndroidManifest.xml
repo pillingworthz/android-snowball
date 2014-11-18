@@ -60,5 +60,7 @@
                 android:value="uk.co.threeonefour.android.snowball.activities.intro.IntroActivity" />
         </activity>
     </application>
+    
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

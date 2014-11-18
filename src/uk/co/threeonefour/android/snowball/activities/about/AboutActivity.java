@@ -1,11 +1,14 @@
 package uk.co.threeonefour.android.snowball.activities.about;
 
 import uk.co.threeonefour.android.snowball.R;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 public class AboutActivity extends ActionBarActivity {
 
@@ -15,7 +18,9 @@ public class AboutActivity extends ActionBarActivity {
         setContentView(R.layout.activity_about);
         
         WebView webView = (WebView) findViewById(R.id.view_about);
-        webView.loadUrl("file:///android_asset/about/about.html");        
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.setWebViewClient(new MyWebViewClient());
+        webView.loadUrl("http://pillingworthz.github.io/android-snowball/home.html");
     }
 
     @Override
@@ -34,4 +39,17 @@ public class AboutActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    private class MyWebViewClient extends WebViewClient {
+        @Override
+        public boolean shouldOverrideUrlLoading(WebView view, String url) {
+            if (Uri.parse(url).getHost().equals("pillingworthz.github.io")) {
+                // This is my web site, so do not override; let my WebView load the page
+                return false;
+            }
+            // Otherwise, the link is not for a page on my site, so launch another Activity that handles URLs
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+            startActivity(intent);
+            return true;
+        }
+    }    
 }
