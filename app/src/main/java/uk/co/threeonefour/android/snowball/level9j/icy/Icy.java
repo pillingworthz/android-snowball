@@ -13,33 +13,33 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package uk.co.threeonefour.android.snowball.basics.lang;
+package uk.co.threeonefour.android.snowball.level9j.icy;
 
-public final class PrimitiveUtils {
+import uk.co.threeonefour.android.snowball.level9j.vm.GameState;
 
-    public static final int asByte(int i) {
+public interface Icy {
 
-        return i & 0xFF;
+    public enum BreakType {
+        NONE, INPUT, READCHAR
     }
 
-    public static final int asUnsignedShort(int i) {
+    void loadGame(byte[] storyFile);
 
-        return i & 0xFFFF;
-    }
+    void startGame();
 
-    public static final int fromByte(byte i) {
+    void stopGame();
 
-        int r = (i < 0) ? i + 256 : i;
-        return r & 0xFF;
-    }
+    BreakType icyBreak();
 
-    public static final boolean asBoolean(int i) {
+    void execute(String command);
 
-        return i != 0;
-    }
+    String getText();
 
-    public static final int asSignedByte(int i) {
+    String getStatus();
 
-        return (i > 127) ? i - 256 : i;
-    }
+    boolean isRunning();
+
+    void setGameState(GameState gameState);
+
+    GameState getGameState();
 }

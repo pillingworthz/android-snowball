@@ -1,9 +1,0 @@
-<resources>
-
-    <dimen name="activity_game_image_view_height">120dp</dimen>
-    <dimen name="activity_game_image_view_vertical_margin">10dp</dimen>
-    
-    <dimen name="activity_load_game_image_width">128dp</dimen>
-    <dimen name="activity_load_game_image_height">102dp</dimen>
-    
-</resources>
