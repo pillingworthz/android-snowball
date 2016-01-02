@@ -26,7 +26,6 @@
 package uk.co.threeonefour.android.snowball.level9j.icy;
 
 import uk.co.threeonefour.android.snowball.basics.lang.StringUtils;
-import uk.co.threeonefour.android.snowball.icy.api.Icy;
 import uk.co.threeonefour.android.snowball.level9j.ptr.StaticReadOnlyIntPtr;
 import uk.co.threeonefour.android.snowball.level9j.vm.CodeFollow;
 import uk.co.threeonefour.android.snowball.level9j.vm.FileHandler;

@@ -34,7 +34,7 @@ import uk.co.threeonefour.android.snowball.basics.lang.MutableDouble;
 import uk.co.threeonefour.android.snowball.basics.lang.MutableInteger;
 import uk.co.threeonefour.android.snowball.basics.lang.MutableLong;
 import uk.co.threeonefour.android.snowball.basics.lang.PrimitiveUtils;
-import uk.co.threeonefour.android.snowball.icy.api.Icy.BreakType;
+import uk.co.threeonefour.android.snowball.level9j.icy.Icy.BreakType;
 import uk.co.threeonefour.android.snowball.level9j.ptr.IntPtr;
 
 public class Vm {

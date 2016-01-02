@@ -35,7 +35,7 @@ import uk.co.threeonefour.android.snowball.gamestate.GameStateDao;
 import uk.co.threeonefour.android.snowball.gamestate.GameStateSummary;
 import uk.co.threeonefour.android.snowball.gamestate.IntentConstants;
 import uk.co.threeonefour.android.snowball.gamestate.PersistableGameStateFactory;
-import uk.co.threeonefour.android.snowball.icy.api.Icy;
+import uk.co.threeonefour.android.snowball.level9j.icy.Icy;
 import uk.co.threeonefour.android.snowball.level9j.icy.IcyVm;
 import uk.co.threeonefour.android.snowball.level9j.vm.FileHandler;
 import uk.co.threeonefour.android.snowball.level9j.vm.GameState;
