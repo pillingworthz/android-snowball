@@ -47,8 +47,6 @@ import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Parcelable;
-import android.support.v4.view.GestureDetectorCompat;
-import android.support.v7.app.ActionBarActivity;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.method.LinkMovementMethod;
@@ -65,7 +63,10 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class GameActivity extends ActionBarActivity implements WordClickedHandler, TextInputHandler {
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GestureDetectorCompat;
+
+public class GameActivity extends AppCompatActivity implements WordClickedHandler, TextInputHandler {
 
     private static final String RAM_SAVE_SLOTS_STATE = "ramSaveSlotsState";
     private static final String IMAGE_STATE = "imageState";

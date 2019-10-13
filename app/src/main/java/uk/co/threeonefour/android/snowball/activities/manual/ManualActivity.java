@@ -2,12 +2,13 @@ package uk.co.threeonefour.android.snowball.activities.manual;
 
 import uk.co.threeonefour.android.snowball.R;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebView;
 
-public class ManualActivity extends ActionBarActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class ManualActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

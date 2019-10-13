@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="uk.co.threeonefour.android.snowball"
-    android:versionCode="1"
-    android:versionName="1.0" >
-
-    <uses-sdk
-        android:minSdkVersion="11"
-        android:targetSdkVersion="19" />
+    package="uk.co.threeonefour.android.snowball">
 
     <application
         android:allowBackup="true"
@@ -26,8 +20,9 @@
             android:name="uk.co.threeonefour.android.snowball.activities.game.GameActivity"
             android:label="@string/activity_game_title"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateVisible|adjustResize" >
-            android:parentActivityName="uk.co.threeonefour.android.snowball.activities.loadgame.LoadGameActivity" >
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:parentActivityName="uk.co.threeonefour.android.snowball.activities.loadgame.LoadGameActivity" >
+
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -60,7 +55,7 @@
                 android:value="uk.co.threeonefour.android.snowball.activities.intro.IntroActivity" />
         </activity>
     </application>
-    
+
     <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
